@@ -1,0 +1,14 @@
+profile: cpu-light
+purpose: reduced_budget_experiment
+device: cpu
+data:
+  start: '2015-01-01'
+lstm:
+  hidden_size: 16
+  epochs: 10
+  patience: 3
+xgboost:
+  max_depths: [3, 5]
+  n_estimators: 300
+federated:
+  rounds: 10

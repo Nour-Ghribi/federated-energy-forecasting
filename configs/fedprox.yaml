@@ -1,0 +1,3 @@
+federated:
+  method: fedprox
+  mu: 0.01

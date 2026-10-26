@@ -1,0 +1,5 @@
+number: 4
+description: "IID-like, temporal heterogeneous and regional; mu sweep; common/local normalization"
+command: "pulse experiment --experiment 4 --profile full"
+base_config: configs/experiments.yaml
+seeds: [42, 43, 44]

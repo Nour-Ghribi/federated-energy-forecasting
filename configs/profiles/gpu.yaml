@@ -1,0 +1,3 @@
+profile: gpu
+purpose: scientific_experiment
+device: cuda

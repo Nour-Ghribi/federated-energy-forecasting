@@ -1,0 +1,18 @@
+defaults: [data.yaml, lstm.yaml, xgboost.yaml, fedavg.yaml]
+seeds: [42, 43, 44]
+device: cpu
+federated:
+  mu: 0.01
+arima:
+  orders: [[1, 0, 0], [2, 0, 0], [1, 1, 1]]
+  training_days: 90
+shap:
+  samples: 128
+  background: 64
+experiments:
+  baseline: [naive, seasonal_daily, seasonal_weekly, arima, xgboost, lstm]
+  sequence_lengths: [24, 48, 168]
+  hidden_sizes: [16, 32]
+  mu_values: [0.0, 0.001, 0.01, 0.1]
+  regions: [PJME, AEP, COMED, DAYTON]
+  partitions: [iid-like, temporal, regional]

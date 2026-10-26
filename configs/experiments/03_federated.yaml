@@ -1,0 +1,5 @@
+number: 3
+description: "Centralized LSTM vs FedAvg vs FedProx"
+command: "pulse experiment --experiment 3 --profile full"
+base_config: configs/experiments.yaml
+seeds: [42, 43, 44]

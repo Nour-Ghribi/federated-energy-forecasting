@@ -1,0 +1,5 @@
+number: 5
+description: "Tree SHAP global/local/dependence/period importance"
+command: "pulse experiment --experiment 5 --profile full"
+base_config: configs/experiments.yaml
+seeds: [42, 43, 44]

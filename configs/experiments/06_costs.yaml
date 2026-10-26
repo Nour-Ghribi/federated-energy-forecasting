@@ -1,0 +1,5 @@
+number: 6
+description: "Artifact-driven training cost and forecasting accuracy"
+command: "pulse experiment --experiment 6 --profile full"
+base_config: configs/experiments.yaml
+seeds: [42, 43, 44]

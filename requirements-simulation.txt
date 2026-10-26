@@ -1,0 +1,3 @@
+# Install inside Linux/WSL2, separate from the Windows venv.
+flwr[simulation]==1.40.0
+ray==2.55.1

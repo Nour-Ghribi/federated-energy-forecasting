@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools==80.9.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "federated-energy-forecasting"
+version = "0.1.0"
+description = "Explainable and federated hourly energy load forecasting with XGBoost, LSTM, Flower and SHAP"
+requires-python = ">=3.11,<3.13"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+energy-forecast = "pulse_predict.cli:main"
+pulse = "pulse_predict.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["integration: end-to-end tests", "ray: requires Linux and Flower simulation extra"]

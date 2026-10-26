@@ -1,0 +1,6 @@
+xgboost:
+  max_depths: [3, 5, 7]
+  n_estimators: 1000
+  learning_rate: 0.05
+  subsample: 0.9
+  patience: 30

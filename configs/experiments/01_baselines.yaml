@@ -1,0 +1,5 @@
+number: 1
+description: "Naive, seasonal naive, bounded ARIMA, XGBoost, centralized LSTM"
+command: "pulse experiment --experiment 1 --profile full"
+base_config: configs/experiments.yaml
+seeds: [42, 43, 44]

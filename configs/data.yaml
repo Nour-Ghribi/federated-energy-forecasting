@@ -1,0 +1,10 @@
+data:
+  regions: [PJME]
+  units: MW
+  start: '2002-01-01'
+  validation_start: '2017-01-01'
+  test_start: '2018-01-01'
+  end: '2018-08-03'
+  lags: [1, 24, 48, 168]
+  rolling: [24, 168]
+  comparison_history: 168

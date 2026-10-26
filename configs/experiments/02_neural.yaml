@@ -1,0 +1,5 @@
+number: 2
+description: "Sequence lengths 24/48/168; hidden sizes 16/32"
+command: "pulse experiment --experiment 2 --profile full"
+base_config: configs/experiments.yaml
+seeds: [42, 43, 44]

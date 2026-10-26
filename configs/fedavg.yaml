@@ -1,0 +1,10 @@
+federated:
+  method: fedavg
+  partition: iid-like
+  partition_seed: 2026
+  clients: 4
+  rounds: 30
+  local_epochs: 1
+  mu: 0.0
+  normalization: common
+  backend: ray
